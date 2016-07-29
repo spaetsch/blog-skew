@@ -4,18 +4,13 @@ body {
     background: #666666;
 }
 .container {
-    padding: 2em 0;
     width: 75%;
     margin: auto;
 }
-.slice-empty {
-    text-align: right;
-}
-.border-cyan {
-    border: thin dashed cyan;
-}
-.slice-empty {
+.slice-noskew {
+  text-align: right;
   padding: 2em 1em;
+
 }
 .skew-inner {
     padding: 0 1em;
@@ -31,18 +26,27 @@ body {
   content: '';
   position: absolute;
   left: 0;
-  top: 0;
   overflow: visible;
   width: 100%;
-  height: 6em;
   z-index: -1;
 }
-.negative:before {
-    background: #3366FF;
-    transform: skewY(-2deg);
+.slice-header:before {
+  bottom: 0;
+  height: 10em;
+  background: #3366FF;
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  transform: skewY(-2deg);
 }
-.positive:before {
-    background: #339900;
-    transform: skewY(4deg);
+.slice-positive:before {
+  top: 0;
+  height: 25em;
+/*  background: #339900;
+*/
+  background: url("../images/bgd1-flare.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-transform: skewY(4deg);
+  -moz-transform: skewY(4deg);
+  transform: skewY(4deg);
 }
 

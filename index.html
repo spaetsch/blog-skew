@@ -4,34 +4,31 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>bootstrap scaff</title>
+    <title>CSS Transforms: Skew demo</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <div class="hero" >
-      <div class="layer">
-        <h1>Hero title</h1>
-        <p>hero text text text</p>
+
+    <div class= "container">
+      <div class="skew-outer">
+        <div class="skew-set negative">
+          <div class="skew-inner border-cyan ">
+            <p>Negative skew: Background is skewed along the y-axis by -2°.</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="skew-outer">
-      <div class="skew">
-        <div class="inner-skew" >
-          <h3>Title 3</h3>
-          <p>Everyone loves cheesy grin ricotta cheese on toast mozzarella the big cheese hard cheese fromage frais.</p>
-
-          <h3>Title 3</h3>
-          <p>Cottage cheese cauliflower cheese chalk and cheese. </p>
-
-          <h3>Title 3</h3>
-          <p>Bavarian bergkase feta everyone loves when the cheese comes out everybody's happy hard cheese caerphilly monterey jack fromage. </p>
+      <div class="slice-empty">
+        <p>Empty slice: No skewed element with background color inserted :before.</p>
+      </div>
+      <div class="skew-outer">
+        <div class="skew-set positive">
+          <div class="skew-inner border-cyan">
+            <p>Positive skew: Background is skewed along the y-axis by 4°.</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <p>Footer footer footer</p>
-    </div>
 
-    <script src="scripts/main.js"></script>
   </body>
 </html>

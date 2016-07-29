@@ -1,47 +1,48 @@
-
+/* --- General Layout --- */
 body {
-  color: white;
+    color: white;
+    background: #666666;
 }
-.layer {
-  background-color: rgba(71, 99, 127, 0.5);
-      position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.container {
+    padding: 2em 0;
+    width: 75%;
+    margin: auto;
+}
+.slice-empty {
+    text-align: right;
+}
+.border-cyan {
+    border: thin dashed cyan;
+}
+.slice-empty {
+  padding: 2em 1em;
+}
+.skew-inner {
+    padding: 0 1em;
+    height: 4em;
 }
 
-.hero {
-  height: 45em;
-  background: no-repeat bottom url("../images/bgd1-flare.jpg");
-}
-
+/* --- Skewing --- */
 .skew-outer {
   z-index: 1;
   position: relative;
 }
-
-.skew-outer .skew:before {
+.skew-outer .skew-set:before {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 0;
   overflow: visible;
   width: 100%;
-  height: 40em;
-  background: #243240;
+  height: 6em;
   z-index: -1;
-  -webkit-transform: skewY(-5deg);
-  // -moz-transform: skewY(-5deg);
-  // -ms-transform: skewY(-5deg);
-  // -o-transform: skewY(-5deg);
-  transform: skewY(-5deg);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: initial;
+}
+.negative:before {
+    background: #3366FF;
+    transform: skewY(-2deg);
+}
+.positive:before {
+    background: #339900;
+    transform: skewY(4deg);
 }
 
-.skew-outer .skew .skew-inner {
-  //padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}

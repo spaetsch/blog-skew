@@ -10,10 +10,15 @@ body {
 .hero {
   background: url("../images/bgd-rocks.jpg") no-repeat top center;
   background-size: cover;
+  color: white;
+}
+.card {
+
 }
 .img-bottom {
-  background: url("../images/bgd-flare.jpg") no-repeat bottom center;
+  background: url("../images/map.png") no-repeat bottom center;
   background-size: cover;
+  color: white;
 }
 
 
@@ -35,6 +40,12 @@ body {
   -webkit-transform: skewY(-2deg);
   -moz-transform: skewY(-2deg);
   transform: skewY(-2deg);
+
+/*webkit-box-shadow: 0px 82px 73px 1px rgba(0,0,0,0.61);
+-moz-box-shadow: 0px 82px 73px 1px rgba(0,0,0,0.61);
+box-shadow: 0px 82px 73px 1px rgba(0,0,0,0.61);*/
+
+box-shadow: 0px 10px 2px -1px rgba(0,0,0,0.5);;
 }
 
 

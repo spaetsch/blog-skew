@@ -1,18 +1,19 @@
 /* --- General Layout --- */
 body {
-    color: white;
-    background: #666666;
+  background-color: gray;
 }
-.slice-noskew {
-  text-align: right;
-  padding: 2em 1em;
+
+.hero{
+  background: url("../images/bgd2-rocks.jpg") no-repeat top center;
+  background-size: cover;
+  height: 45em;
+  padding: 10em;
+  overflow: visible;
 }
 .skew-inner {
-  padding: 2em;
+  padding: 10em;
   height: 40em;
 }
-
-
 
 /* --- Skewing --- */
 .skew-outer {
@@ -22,27 +23,17 @@ body {
 .skew-outer .skew-set::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  top: -2em;
   left: 0;
+  height: 35em;
+  background-color: white;
   overflow: visible;
   width: 100%;
   z-index: -1;
-}
-.slice-negative::before {
   -webkit-transform: skewY(-2deg);
   -moz-transform: skewY(-2deg);
   transform: skewY(-2deg);
+}
 
-}
-/*.slice-positive:before {
-  background: #339900;
-  height: 5em;
-  -webkit-transform: skewY(4deg);
-  -moz-transform: skewY(4deg);
-  transform: skewY(4deg);
-}*/
-.hero::before{
-  background: url("../images/bgd2-rocks.jpg") no-repeat top center;
-  background-size: cover;
-  height: 40em;
-}
+
+

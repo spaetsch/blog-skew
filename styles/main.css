@@ -3,50 +3,46 @@ body {
     color: white;
     background: #666666;
 }
-.container {
-    width: 75%;
-    margin: auto;
-}
 .slice-noskew {
   text-align: right;
   padding: 2em 1em;
-
 }
 .skew-inner {
-    padding: 0 1em;
-    height: 4em;
+  padding: 2em;
+  height: 40em;
 }
+
+
 
 /* --- Skewing --- */
 .skew-outer {
   z-index: 1;
   position: relative;
 }
-.skew-outer .skew-set:before {
+.skew-outer .skew-set::before {
   content: '';
   position: absolute;
+  bottom: 0;
   left: 0;
   overflow: visible;
   width: 100%;
   z-index: -1;
 }
-.slice-header:before {
-  bottom: 0;
-  height: 10em;
-  background: #3366FF;
+.slice-negative::before {
   -webkit-transform: skewY(-2deg);
   -moz-transform: skewY(-2deg);
   transform: skewY(-2deg);
+
 }
-.slice-positive:before {
-  top: 0;
-  height: 25em;
-/*  background: #339900;
-*/
-  background: url("../images/bgd1-flare.jpg") no-repeat center center;
-  background-size: cover;
+/*.slice-positive:before {
+  background: #339900;
+  height: 5em;
   -webkit-transform: skewY(4deg);
   -moz-transform: skewY(4deg);
   transform: skewY(4deg);
+}*/
+.hero::before{
+  background: url("../images/bgd2-rocks.jpg") no-repeat top center;
+  background-size: cover;
+  height: 40em;
 }
-

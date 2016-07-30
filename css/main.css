@@ -1,11 +1,13 @@
 /* --- General Layout --- */
 
 .slice {
-  height: 45em;
-  padding: 10em;
+  height: 50em;
+  padding: 10em 5em;
+  margin-top: -2em;
 }
-.navbar {
-  margin-bottom: -2px;
+.card-address {
+  margin-top: 2em;
+  padding: 1em 2em;
 }
 
 /* --- Skewing --- */
@@ -17,16 +19,18 @@
 .skew-outer .skew-set::before {
   content: '';
   position: absolute;
-  top: -2em;
+  top: 0;
   left: 0;
-  height: 50em;
+  height: 55em;
   overflow: visible;
   width: 100%;
   z-index: -1;
   -webkit-transform: skewY(-3deg);
   -moz-transform: skewY(-3deg);
   transform: skewY(-3deg);
+
 }
+
 
 /* --- Typography --- */
 
@@ -34,36 +38,57 @@
 /* --- Theme --- */
 
 /* --
-#5D6622 - dark green
-#A5B24D - light green
-#6691BF - blue
-#FF6D61 - bright peach
-#7F302A - dark peach
+#a6a378 - muted moss
+#595738 - dark moss
+#F2F0C8 - cream
+#3C2F59 - dark purple
+#8678A6 - light purple
+#bcc8da - sky blue
 -- */
 
 body {
-  background-color: gray;
+  background-color: #595738;
+}
+.skew-outer .skew-set::before,
+.card-address {
+  color: black;
+  background-color: #a6a378;
+
 }
 .hero {
+  color: white;
   background: url("../images/bgd-rocks.jpg") no-repeat top center;
   background-size: cover;
-  color: white;
 }
 .img-bottom {
-  background: url("../images/map.png") no-repeat bottom center;
+  background: url("../images/map.png") no-repeat top right;
   background-size: cover;
-  color: white;
 }
 .skew-outer .skew-set::before {
-  background-color: white;
   webkit-box-shadow: 0px 10px 2px -1px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 10px 2px -1px rgba(0,0,0,0.5);
   box-shadow: 0px 10px 2px -1px rgba(0,0,0,0.5);
 }
 .card-address {
-  color: black;
-  background-color: white;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+}
+.btn-default {
+  background-color: #bcc8da;
+  border-color: #bcc8da;
+}
+.navbar-default, hr {
+  background-color: #a6a378;
+  border-color: #a6a378;
+}
+h1, h2, h3, .hero p {
+  color: #F2F0C8;
+}
+h4, h5 {
+  color: #bcc8da;
+}
+
+h5 {
+  text-transform: uppercase;
 }

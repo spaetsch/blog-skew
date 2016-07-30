@@ -7,7 +7,7 @@
 }
 .card-address {
   margin-top: 2em;
-  padding: 1em 2em;
+  padding: 0 1em;
 }
 
 /* --- Skewing --- */
@@ -28,21 +28,13 @@
   -webkit-transform: skewY(-3deg);
   -moz-transform: skewY(-3deg);
   transform: skewY(-3deg);
-
 }
 
-
-/* --- Typography --- */
-
-
 /* --- Theme --- */
-
 /* --
 #a6a378 - muted moss
 #595738 - dark moss
 #F2F0C8 - cream
-#3C2F59 - dark purple
-#8678A6 - light purple
 #bcc8da - sky blue
 -- */
 
@@ -53,7 +45,6 @@ body {
 .card-address {
   color: black;
   background-color: #a6a378;
-
 }
 .hero {
   color: white;
@@ -61,7 +52,7 @@ body {
   background-size: cover;
 }
 .img-bottom {
-  background: url("../images/map.png") no-repeat top right;
+  background: url("../images/map.png") no-repeat bottom right;
   background-size: cover;
 }
 .skew-outer .skew-set::before {
@@ -85,10 +76,19 @@ body {
 h1, h2, h3, .hero p {
   color: #F2F0C8;
 }
-h4, h5 {
+h4 {
   color: #bcc8da;
 }
 
-h5 {
+/* --- Typography --- */
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+h1, h2, h3, .hero p {
+  font-family: 'Bitter', serif;
+}
+h4 {
   text-transform: uppercase;
 }
+

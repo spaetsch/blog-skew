@@ -3,17 +3,19 @@ body {
   background-color: gray;
 }
 
-.hero{
-  background: url("../images/bgd2-rocks.jpg") no-repeat top center;
-  background-size: cover;
+.slice {
   height: 45em;
   padding: 10em;
-  overflow: visible;
 }
-.skew-inner {
-  padding: 10em;
-  height: 40em;
+.hero {
+  background: url("../images/bgd-rocks.jpg") no-repeat top center;
+  background-size: cover;
 }
+.img-bottom {
+  background: url("../images/bgd-flare.jpg") no-repeat bottom center;
+  background-size: cover;
+}
+
 
 /* --- Skewing --- */
 .skew-outer {
@@ -25,7 +27,7 @@ body {
   position: absolute;
   top: -2em;
   left: 0;
-  height: 35em;
+  height: 50em;
   background-color: white;
   overflow: visible;
   width: 100%;

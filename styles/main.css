@@ -2,6 +2,9 @@
 body {
   background-color: gray;
 }
+footer {
+  background-color: white;
+}
 
 .slice {
   height: 45em;
@@ -11,9 +14,6 @@ body {
   background: url("../images/bgd-rocks.jpg") no-repeat top center;
   background-size: cover;
   color: white;
-}
-.card {
-
 }
 .img-bottom {
   background: url("../images/map.png") no-repeat bottom center;

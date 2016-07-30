@@ -2,9 +2,7 @@
 body {
   background-color: gray;
 }
-footer {
-  background-color: white;
-}
+
 .slice {
   height: 45em;
   padding: 10em;
@@ -19,6 +17,30 @@ footer {
   background-size: cover;
   color: white;
 }
+.navbar {
+  margin-bottom: -2px;
+}
+
+.card-address {
+  color: black;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+}
+
+/* --- Theme --- */
+/* --
+#5D6622 - dark green
+#A5B24D - light green
+#6691BF - blue
+#FF6D61 - bright peach
+#7F302A - dark peach
+-- */
+.skew-outer .skew-set::before {
+  background-color: white;
+}
+
 
 /* --- Skewing --- */
 .skew-outer {
@@ -31,7 +53,6 @@ footer {
   top: -2em;
   left: 0;
   height: 50em;
-  background-color: white;
   webkit-box-shadow: 0px 10px 2px -1px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 10px 2px -1px rgba(0,0,0,0.5);
   box-shadow: 0px 10px 2px -1px rgba(0,0,0,0.5);

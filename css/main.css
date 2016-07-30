@@ -1,11 +1,48 @@
 /* --- General Layout --- */
-body {
-  background-color: gray;
-}
 
 .slice {
   height: 45em;
   padding: 10em;
+}
+.navbar {
+  margin-bottom: -2px;
+}
+
+/* --- Skewing --- */
+
+.skew-outer {
+  z-index: 1;
+  position: relative;
+}
+.skew-outer .skew-set::before {
+  content: '';
+  position: absolute;
+  top: -2em;
+  left: 0;
+  height: 50em;
+  overflow: visible;
+  width: 100%;
+  z-index: -1;
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+}
+
+/* --- Typography --- */
+
+
+/* --- Theme --- */
+
+/* --
+#5D6622 - dark green
+#A5B24D - light green
+#6691BF - blue
+#FF6D61 - bright peach
+#7F302A - dark peach
+-- */
+
+body {
+  background-color: gray;
 }
 .hero {
   background: url("../images/bgd-rocks.jpg") no-repeat top center;
@@ -17,10 +54,12 @@ body {
   background-size: cover;
   color: white;
 }
-.navbar {
-  margin-bottom: -2px;
+.skew-outer .skew-set::before {
+  background-color: white;
+  webkit-box-shadow: 0px 10px 2px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 10px 2px -1px rgba(0,0,0,0.5);
+  box-shadow: 0px 10px 2px -1px rgba(0,0,0,0.5);
 }
-
 .card-address {
   color: black;
   background-color: white;
@@ -28,41 +67,3 @@ body {
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
 }
-
-/* --- Theme --- */
-/* --
-#5D6622 - dark green
-#A5B24D - light green
-#6691BF - blue
-#FF6D61 - bright peach
-#7F302A - dark peach
--- */
-.skew-outer .skew-set::before {
-  background-color: white;
-}
-
-
-/* --- Skewing --- */
-.skew-outer {
-  z-index: 1;
-  position: relative;
-}
-.skew-outer .skew-set::before {
-  content: '';
-  position: absolute;
-  top: -2em;
-  left: 0;
-  height: 50em;
-  webkit-box-shadow: 0px 10px 2px -1px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 10px 2px -1px rgba(0,0,0,0.5);
-  box-shadow: 0px 10px 2px -1px rgba(0,0,0,0.5);
-  overflow: visible;
-  width: 100%;
-  z-index: -1;
-  -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
-  transform: skewY(-3deg);
-}
-
-
-
